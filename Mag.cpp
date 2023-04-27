@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "Mag.h"
 
 using namespace std;
