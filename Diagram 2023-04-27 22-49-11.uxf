@@ -1,0 +1,34 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>40</x><y>40</y><w>260</w><h>120</h></coordinates><panel_attributes>&lt;&lt;MAG&gt;&gt;
+--
+string nazwa;
+    float zdrowie_max;
+    bool zywy;
+--
+Mag(string n = "Wizard", float hp = 100);
+--
+    void wyswietl();
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>230</y><w>440</w><h>210</h></coordinates><panel_attributes>&lt;&lt;STATYSTYKI&gt;&gt;
+--
+bool plec;
+float zdrowie, obrazenia, obrona;
+--
+Statystyki(Mag&amp;, bool, float0, float, float);
+~Statystyki();
+--
+void czy_zyje();
+void wypij_miksture();
+void medytuj();
+void wyswietl();
+--
+friend void atakuj(Statystyki &amp;, Statystyki &amp;);
+friend void ulecz(Statystyki &amp;, Statystyki &amp;);
+friend void ultimate(Statystyki &amp;, Statystyki &amp;);</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>160</y><w>180</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>540</y><w>390</w><h>30</h></coordinates><panel_attributes>void ulecz(Statystyki &amp;, Statystyki &amp;);</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>490</y><w>390</w><h>30</h></coordinates><panel_attributes> void atakuj(Statystyki &amp;, Statystyki &amp;);</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>590</y><w>390</w><h>30</h></coordinates><panel_attributes>void ultimate(Statystyki &amp;, Statystyki &amp;);</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>460</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>10</x><y>10</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>450</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>440</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>40</y><w>260</w><h>120</h></coordinates><panel_attributes>&lt;&lt;WOJOWNIK&gt;&gt;
+--
+string nazwa;
+    float zdrowie_max;
+    bool zywy;
+--
+Wojownik(string n = "Warior", float hp = 300);
+--
+   void wyswietl();
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>90</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>110</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>170</y><w>130</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>110;90;10;10</additional_attributes></element></diagram>

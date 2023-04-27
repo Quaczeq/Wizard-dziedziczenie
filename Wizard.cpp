@@ -12,5 +12,22 @@ int main()
     s1.medytuj();                         // Metoda leczy do maksymalnego poziomu zdrowia i dodaje +5 do obrazen lub obrony (zalezy od plci bohatera)
     s1.wyswietl();                        // Statystyki po medytacji
 
+    Mag m2("Arietta", 535);
+    Statystyki s2(m2, false, 535, 20, 34);
+    s2.wyswietl();
+
+    atakuj(s2,s1);
+    atakuj(s2,s1);
+    s1.wypij_miksture();
+    atakuj(s1,s2);
+    ultimate(s1,s2);
+    s1.wyswietl();
+    s2.wyswietl();
+    
+    Wojownik w1("Czesio", 830);
+    w1.wyswietl();
+    Statystyki s3(w1,true,600,60,70);
+    s3.wyswietl();
+
     return 0;
 }
