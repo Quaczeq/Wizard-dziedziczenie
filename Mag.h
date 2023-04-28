@@ -35,6 +35,7 @@ public:
 class Wojownik : public Mag
 {
 public:
+    int sila;
     Wojownik(string n = "Warior", float hp = 300);
 };
 
