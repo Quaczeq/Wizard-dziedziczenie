@@ -36,7 +36,7 @@ class Wojownik : public Mag
 {
 public:
     int sila;
-    Wojownik(string n = "Warior", float hp = 300);
+    Wojownik(string n = "Warior", float hp = 300, int s = 2);
 };
 
 void atakuj(Statystyki &, Statystyki &);
