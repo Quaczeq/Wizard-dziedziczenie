@@ -116,4 +116,4 @@ void ultimate(Statystyki& a, Statystyki& s)
     cout << a.nazwa << " uzyl/a ultimate na: " << s.nazwa << endl;
     s.zdrowie = s.zdrowie - (a.obrazenia * 5);
     s.czy_zyje();
-}
+};
