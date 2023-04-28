@@ -84,9 +84,10 @@ void Statystyki::medytuj()
     }
 }
 
-Wojownik::Wojownik(string n, float hp) {
+Wojownik::Wojownik(string n, float hp, int s) {
     nazwa = n;
     zdrowie_max = hp;
+    sila = s;
     zywy = true;
 }
 
