@@ -27,7 +27,7 @@ int main()
     Wojownik w1("Czesio", 830);
     w1.wyswietl(); // Wojownik dziedziczy po Magu, wiec ma dostep do jego metod
     Statystyki s3(w1,true,600,60,70); 
-    s3.wyswietl();
+    s3.wyswietl(); // Statystyki wojownika
 
     return 0;
 }
